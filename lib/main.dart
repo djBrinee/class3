@@ -84,7 +84,6 @@ class _QuizPageState extends State<QuizPage> {
                   if (!quiz.lastQuestion()) {
                     scoreKeeper.add(placeCheckIcon());
                     goodAnswers++;
-                    print(goodAnswers.toString());
                   }
                 } else {
                   if (!quiz.lastQuestion()) {
@@ -157,8 +156,8 @@ class _QuizPageState extends State<QuizPage> {
         return AlertDialog(
           title: Text("You've finished the game",
               style: TextStyle(fontSize: 30, color: Color.fromARGB(255, 4, 31, 154))),
-              content: SingleChildScrollView(
-              child: ListBody(
+          content: SingleChildScrollView(
+            child: ListBody(
               children: <Widget>[
                 Text(
                   'You had a total of ${correctAnswers} over ${scoreKeeper.length} total answers. You can play again by pressing restart.',
@@ -169,7 +168,10 @@ class _QuizPageState extends State<QuizPage> {
           ),
           actions: <Widget>[
             TextButton(
-              child: const Text('Reestart', style: TextStyle(fontSize: 24)),
+              child: Text('Reestart',
+                  style: TextStyle(
+                    fontSize: 24,
+                  )),
               onPressed: () {
                 Navigator.of(context).pop();
                 setState(() {

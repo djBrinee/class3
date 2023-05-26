@@ -1,16 +1,12 @@
-# class3
+# Question game
 
-A new Flutter project.
+This is a question game developed in flutter, this app is reading a modified json file provided by the free API service: **Open Trivia DB.** While passing questions, the game will show a record bar that tells user if the answer provided is correct. At the end of the app, the app will tell you the total correct answers the user reached.
 
-## Getting Started
+## Technologies
+* Dart
+* Flutter
+* Open Trivia DB (WebSite).
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Credits
+* **Author:** Deivy Peña Rodríguez
+* **Mail:** deivyp.rod@gmail.com.
