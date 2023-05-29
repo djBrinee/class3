@@ -1,6 +1,5 @@
 import 'package:class3/quiz_brain.dart';
 import 'package:flutter/material.dart';
-import 'package:restart_app/restart_app.dart';
 
 QuizBrain quiz = QuizBrain();
 List<Widget> scoreKeeper = [];
